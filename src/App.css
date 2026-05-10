@@ -14,3 +14,24 @@
     var(--Secondary-Secondary200, #b8cff3) 100%
   );
 }
+.card-container2 {
+  background: linear-gradient(
+    117deg,
+    var(--Secondary-Secondary200, #b8cff3) 0%,
+    var(--Base-Base-White, #fafafa) 100%
+  );
+}
+.coming-soon {
+  background: linear-gradient(
+    179deg,
+    var(--Background, #fafafa) 6.89%,
+    var(--Secondary-Secondary200, #b8cff3) 122.77%
+  );
+}
+.download-app {
+  background: linear-gradient(
+    180deg,
+    var(--Base-Base-White, #fafafa) 0%,
+    var(--Trend-tab, #dce7f9) 100%
+  );
+}

@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: var(--sans);
   background: white;
-  color: black;
+  color: #2d2d2d;
 }
 
 h1,
@@ -16,13 +16,11 @@ h4 {
 }
 
 h1 {
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
