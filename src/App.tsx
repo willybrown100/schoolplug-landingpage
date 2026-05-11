@@ -32,7 +32,7 @@ function App() {
               SchoolPlug
             </h3>
           </div>
-          <img src={menuIcon} alt="menu" className="w-10 h-10" />
+          <img src={menuIcon} alt="menu" className="w-10 h-10 lg:hidden" />
         </nav>
         <div className="flex mt-10 flex-col items-center justify-center">
           <h1 className="font-bold text-[40px] leading-tight mb-0">
@@ -67,11 +67,11 @@ function App() {
                 key={index}
                 className="!w-[131.22px] md:!w-[131.22px]"
               >
-                <div className="rounded-[2rem] overflow-hidden shadow-lg">
+                <div className="rounded-4xl overflow-hidden shadow-lg">
                   <img
                     src={image}
                     alt="student"
-                    className="w-[131.22px] h-[140.31px] object-cover rounded-[2rem]"
+                    className="w-[131.22px] h-[140.31px] object-cover rounded-4xl"
                   />
                 </div>
               </SwiperSlide>
