@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: var(--sans);
-  background: white;
+  background: #fafafa;
   color: #2d2d2d;
 }
 
@@ -17,6 +17,7 @@ h4 {
 
 h1 {
   letter-spacing: 0.1px;
+  margin: 0;
 }
 h2 {
   letter-spacing: -0.24px;
