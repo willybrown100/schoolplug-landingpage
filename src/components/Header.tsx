@@ -34,7 +34,7 @@ export default function Header({
           {navLinks.map((item) => (
             <div
               key={item}
-              className="border-b last:border-b-0 border-[#EAEAEA] py-3"
+              className="border-b last:border-b-0 border-[#EAEAEA] lg:border-none py-3"
             >
               <a
                 href={item === "Support" ? "mailto:support@schoolplug.ng" : "#"}
@@ -53,12 +53,15 @@ export default function Header({
         <button onClick={() => setIsOpen(true)} className="lg:hidden">
           <img src={menuIcon} alt="menu" className="w-10 h-10" />
         </button>{" "}
-        <button
-          // onClick={() => setIsOpen(true)}
-          className="hidden lg:block bg-[#174489] justify-center items-center w-[191px] h-[47px] text-[14px] font-bold  text-white px-4 py-2 rounded-full"
+        <a
+          href="https://pub-8ba94395a70941c9b4d1fa7511af6d2e.r2.dev/app-release.apk"
+          className="hidden lg:block"
+          download="app-release.apk"
         >
-          Get Mobile App
-        </button>{" "}
+          <button className="bg-[#174489] justify-center items-center w-[191px] h-[47px] text-[14px] font-bold  text-white px-4 py-2 rounded-full">
+            Get Mobile App
+          </button>{" "}
+        </a>
       </nav>
       <div className="flex mt-10 flex-col lg:mt-20 items-center justify-center">
         <div className="lg:flex lg:flex-row gap-x-7">
@@ -122,11 +125,16 @@ export default function Header({
           />
         </div>
       </div>
-      <div className="flex justify-center">
+
+      <a
+        href="https://pub-8ba94395a70941c9b4d1fa7511af6d2e.r2.dev/app-release.apk"
+        download="app-release.apk"
+        className="flex justify-center"
+      >
         <button className="bg-[#174489] mb-8 lg flex lg:hidden justify-center items-center w-[158px] h-[47px] text-[14px] font-bold mt-[69px] text-white px-4 py-2 rounded-full">
           Get Mobile App
         </button>
-      </div>
+      </a>
     </header>
   );
 }
